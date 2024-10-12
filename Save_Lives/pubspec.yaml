@@ -1,0 +1,60 @@
+name: bloodapp
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  firebase_core: ^3.5.0
+  firebase_auth: ^5.3.0
+  cloud_firestore: ^5.4.2
+
+  # Splash screen package
+  flutter_native_splash: ^2.4.1
+
+  # Utility packages
+  http: ^1.1.0
+  intl: ^0.18.1
+  logger: ^2.0.1
+  lottie: ^3.1.2
+  connectivity_plus: ^6.0.5
+  url_launcher: ^6.3.0
+  smooth_page_indicator: ^1.2.0+3
+  carousel_slider: ^5.0.0
+ 
+
+  # State management
+  get: ^4.6.5
+  get_storage: ^2.1.1
+  iconsax: ^0.0.8
+  import_sorter: ^4.6.0
+  font_awesome_flutter: ^10.7.0
+
+  # //firebase
+  # firebase_core: ^3.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    # - assets/images/on_boarding_images/
+    - assets/img/animations/
+    - assets/logos/
+    # - assets/icons/
+    # - assets/fonts/
+    # - assets/icons/categories/
+    - assets/img/
+    # - assets/images/products/
+     
