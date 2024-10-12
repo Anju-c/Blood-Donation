@@ -200,6 +200,7 @@
 //   }
 // }
 
+import 'package:bloodapp/data/repositories/authentication/authentication_repository.dart';
 import 'package:bloodapp/features/bloodapp/controllers/profile/profile_controller.dart';
 import 'package:bloodapp/features/bloodapp/screens/Profile/widget/profilecard.dart';
 import 'package:bloodapp/utilis/constants/colors.dart';
@@ -289,8 +290,9 @@ class ProfileScreen extends StatelessWidget {
                       ),
                     ),
                     ElevatedButton(
-                      onPressed: () {
-                        // Logout functionality
+                      onPressed: () async {
+                        await   AuthenticationRepository.instance.logout();
+
                       },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.red,
